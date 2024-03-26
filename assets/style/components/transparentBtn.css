@@ -1,0 +1,29 @@
+.btn {
+    padding: 16px 8px;
+    background: linear-gradient(45deg, #12121a, #101018);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FA7F3B;
+    border: 1px solid #1c1f2e;
+    min-width: 195px;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    font-family: 'Aptos-SemiBold',sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn:hover{
+    filter: brightness(1.1);
+    box-shadow: 0 0 32px 4px rgba(242, 195, 53, 0.122);
+    cursor: pointer;
+}
+
+    

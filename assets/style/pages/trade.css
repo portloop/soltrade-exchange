@@ -1,0 +1,637 @@
+
+
+.main-trade__container {
+    /* color: #fff; */
+    margin-top: 5px;
+    display: flex;
+}
+
+.main-trade__leftside {
+    padding:  0 8px 16px 8px;
+    border: 1px solid #202027;
+    max-width: 356px;
+    box-sizing: border-box;
+}
+
+.deal-block__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.deal-block__header_item {
+    text-transform: uppercase;
+    text-align: center;
+    height: 40px !important;
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    color: rgba(174, 174, 188, 0.6);
+    font-size: 13px;
+    letter-spacing: .6px;
+    line-height: 37px;
+    font-family: 'Aptos-SemiBold', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+
+.deal-block__header_item:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.deal-block__header_item:first-child.active {
+    background: #3deca610;
+    border-bottom-color: #5be0ad;
+    color: #5be0ad;
+}
+
+.deal-block__header_item:last-child.active {
+    background: #d34a4a14;
+    border-bottom-color: #f85e73;
+    color: #f85e73;
+}
+
+
+.deal-block__deal_type{
+    display: flex;
+    padding: 3px;
+    border-radius: var(--br-2);
+    background-color: #0e0e12;
+    border: 1px solid #201e29;
+    margin-top: 16px;
+}
+ 
+.deal-block__deal_type_item {
+    height: 26px;
+    font-size: 14px;
+    color: #0e0e12;
+    color: rgba(174, 174, 188, 0.6);
+    font-family: 'Aptos-SemiBold', sans-serif;
+    border: 1px solid transparent;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.deal-block__deal_type_item.active {
+    color: #fff;
+    background: #161722;
+    border-color: #23212e;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+
+.deal-block__deal_type_item:hover {
+    cursor: pointer;
+    color: rgba(174, 174, 188, 0.5);
+}
+
+.deal-amount__container{
+    margin-top: 10px;
+    position: relative;
+}
+
+
+.deal-amount__container input{
+    background: #0e0e12;
+    border: 1px solid #201e29;
+    outline: 0;
+    color: #fff;
+    font-size: 26px;
+    padding: 30px 60px 5px 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Aptos-Bold', sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.deal-amount__container input:focus {
+    border-color: #283552;
+}
+
+
+.deal-amount-title {
+    color: #dddde3;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    margin-bottom: 0;
+    letter-spacing: -.03em !important;
+    white-space: nowrap;
+    min-height: 19px;
+    font-family: 'Aptos', sans-serif;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.deal-amount-title span {
+    margin-left: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #adadbb;
+    letter-spacing: -.03em !important;
+
+}
+
+.deal-amount-link{
+    color: #cbcbdd;
+    background-color: #161722;
+    border: 1px solid #23212e;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    max-width: 105px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-family: 'Aptos', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 2px 4px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+
+/* Range input  */
+.TradingPanel_sliderWrapper__DtlLW {
+    padding: 0 4px 16px
+}
+
+
+/*generated with Input range slider CSS style generator (version 20211225)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range] {
+  height: 18px;
+  -webkit-appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: #232630;
+  height: 8px;
+  margin-top: 15px;
+
+}
+
+/*progress support*/
+input[type=range] {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 24px + var(--ratio) * (100% - 24px));
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/*webkit*/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background: #232630;
+  border: 1px solid #FA7F3B;
+  box-shadow: 1px 1px 3px #544C4C;
+  margin-top: calc(1em * 0.5 - max(20px * 0.5,0.5px));
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 1em;
+  border: none;
+  border-radius: 0.5em;
+  background: #00a8a829;
+  box-shadow: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(#FA7F3B, #F9BB4B) 0/var(--sx) 100% no-repeat, #00a8a829;
+    height: 8px;
+}
+
+/*mozilla*/
+input[type=range]::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 30px;
+  background: #FCFCFC;
+  border: 0.5px solid #ffffff66;
+  box-shadow: 1px 1px 3px #544C4C;
+}
+
+input[type=range]::-moz-range-track {
+  height: 1em;
+  border: none;
+  border-radius: 0.5em;
+  background: #00a8a829;
+  box-shadow: none;
+}
+
+input[type=range]::-moz-range-track {
+    background: linear-gradient(90deg, #FA7F3B, #f79059 25%, #f9aa71 50%, #F9BB4B 75%, #F9BB4B);
+   
+}
+
+/*ms*/
+input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range]::-ms-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background: #ffbbbb;
+  border: 0.5px solid #ffffff66;
+  box-shadow: 1px 1px 3px #544C4C;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range]::-ms-track {
+  height: 1em;
+  border-radius: 0.5em;
+  background: #00a8a829;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type=range]::-ms-fill-lower {
+  height: 1em;
+  border-radius: 0.5em 0 0 0.5em;
+  margin: -undefined 0 -undefined -undefined;
+  background: #000000;
+  border: none;
+  border-right-width: 0;
+}
+
+.da-range__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.da-range__header input {
+  background: #0e0e12;
+  border: 1px solid #201e29;
+  outline: 0;
+  width: 100px;
+  height: 32px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-sizing: border-box;
+  color: #FCFCFC;
+  text-align: center;
+  font-size: 18px;
+}
+
+.da-range__header input:focus {
+  border-color: #283552;
+  
+}
+
+
+.da-range__header_title{
+    color: #dddde3;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    margin-bottom: 0;
+    letter-spacing: -.03em !important;
+    white-space: nowrap;
+    min-height: 19px;
+    font-family: 'Aptos', sans-serif;
+    top: 2px;
+    left: 5px;
+}
+
+.da-range__header_title span {
+    margin-left: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #adadbb;
+    letter-spacing: -.03em !important;
+
+}
+
+
+.deal-connect__button {
+  background: linear-gradient(170deg, #2b3bca, #2249c9);
+  width: 100%;
+  border: 1px solid #3c4dec;
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 40px;
+  color: #fff;
+  font-family: 'Aptos-SemiBold', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.main-trade__rightside{
+  width: 100%;
+}
+
+.crypto-price {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #ffffffac;
+  font-family: 'Aptos', sans-serif;
+}
+
+.crypto-price .leftside {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.crypto-price img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.crypto-price .rightside.green {
+  color: rgb(38, 166, 154);;
+}
+
+.crypto-price .rightside.red {
+  color: #f85e73;
+}
+
+.main-trade-rightside__header{
+  display: flex;
+  align-items: center;
+  border: 1px solid #161722;
+  padding: 10px;
+}
+
+.main-trade-rightside__header .star {
+  margin-bottom: -3px;
+  margin-right: 20px;
+}
+
+.crypto-price{
+  border-right: 1px solid #232630;
+  padding: 0 15px;
+}
+
+.crypto-price:hover{
+  cursor: pointer;
+}
+
+.main-crypto__price{
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #201e29;
+  padding-right: 10px;
+  height: 58px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main-crypto__price:hover{
+  cursor: pointer;
+  background: #202027;
+}
+
+.main-crypto__price .arrow{
+  fill: #8a8c9e;
+  margin-left: 30px;
+}
+
+.main-crypto__price img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+
+
+.token-info__name{
+  font-family: 'Aptos-SemiBold', sans-serif;
+  color: #fff;
+  font-size: 22px;
+}
+
+.token-info__description{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-family: 'Aptos', sans-serif;
+}
+
+.main-price-widget{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-left: 0;
+  border: 1px solid #161722;
+}
+
+.token-price{
+  font-family: 'Aptos', sans-serif;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.main-crypto__price_dropdown {
+  position: absolute;
+ top: 100%;
+  left: 0;
+  background-color: #0e0e12;
+  border: 1px solid #201e29;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.main-crypto__price_dropdown .token {
+  display: flex;
+  padding: 5px 30px;
+}
+
+.main-crypto__price_dropdown .token:hover{
+  background-color: #201e29;
+}
+
+.chart {
+  height: 800px;
+}
+
+.order-list{
+  padding: 10px;
+  border: 1px solid #201e29;
+}
+
+
+.order-list__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-list__header .leftside, .order-list__header .rightside {
+  display: flex;
+}
+
+.order-list__header {
+  display: flex;
+    align-items: center;
+    font-family: 'Aptos', sans-serif;
+    color: #82828f;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-list__header .tab {
+  padding: 0 12px;
+
+}
+
+
+.order-list__header .tab.active {
+  color: #fff;
+}
+
+.order-list__header .rightside {
+  display: flex;
+  align-items: center;
+}
+
+.order-list__header .rightside .icon {
+  margin: 0 10px;
+}
+
+.order-list__header .rightside .icon svg {
+  fill: #23212e;
+  height: 16px;
+  width: 16px;
+}
+
+.order-list__header .rightside .sort_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-size: 14px;
+  font-family: 'Aptos-SemiBold', sans-serif;
+  color: #82828f;
+  background-color: transparent;
+  border-radius: var(--br-2);
+  border: 1px solid #232325;
+  min-width: 80px;
+  width: max-content;
+  text-transform: capitalize;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.order-list .order-list__body {
+  display: flex;
+    align-items: center;
+    font-family: 'Aptos', sans-serif;
+    color: #82828f;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    height: 30vh;
+}
+
+.order-list .order-list__body  button {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-size: 14px;
+  font-family: 'Aptos-SemiBold', sans-serif;
+  color: #82828f;
+  background-color: transparent;
+  border-radius: var(--br-2);
+  border: 1px solid #232325;
+  min-width: 80px;
+  width: max-content;
+  text-transform: capitalize;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.long{
+  width: 100%;
+}
+
+@media screen and (max-width: 1030px) {
+  .main-trade__leftside {
+    max-width: 300px;
+  }
+
+  .deal-amount__container input{
+    padding-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .main-trade__leftside{
+    order: 2;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .main-trade__container {
+    flex-direction: column;
+  }
+}

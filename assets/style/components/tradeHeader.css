@@ -1,0 +1,211 @@
+.header-container{
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container__leftside, .header-container__rightside{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-container__leftside .header-container__logo{
+    height: 30px;
+    margin-right: 30px;
+}
+
+.header-container__logo_mobile{
+    display: none;
+}
+
+.header-container__leftside .header-container__logo img {
+    height: 100%;
+}
+
+.header-container__menu{
+    display: flex;
+    align-items: center;
+}
+
+.header-container__menu .header-container__menu_item {
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #adadbb;
+    font-family: 'Aptos-SemiBold', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 0 4px;
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.burger-menu svg {
+    width: 100%;
+    height: 100%;
+    fill: #82828f;
+}
+
+.header-container__menu .header-container__menu_item:hover{
+    background-color: #ffffff05;
+}
+
+.header-container__menu .header-container__menu_item.active {
+    background-color: #ffffff05;
+}
+
+.network-dropdown{
+    background-color: transparent;
+    border-radius: var(--br-2);
+    display: flex;
+    align-items: center;
+    color: #adadbb;
+    font-family: 'Aptos', sans-serif;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.network-dropdown__name {
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    background: #ffffff05;
+    border: 1px solid #232325;
+    padding: 0 12px;
+    height: 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 20px;
+}
+
+.network-dropdown__name .logo {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px;
+}
+
+
+.network-dropdown__name .logo {
+    width: 100%;
+    height: 100%;
+}
+
+.network-dropdown__name .arrow svg {
+    width: 12px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.network-dropdown__name:hover {
+    border: 1px solid #3a5174;
+    cursor: pointer;
+}
+
+.connect-wallet__button{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    font-size: 13px;
+    font-family: 'Aptos-SemiBold', sans-serif;
+    line-height: 36px;
+    margin-left: 12px;
+    color: #fff;
+    background: #3c4dec;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.connect-wallet__button .icon svg {
+    width: 13px;
+    height: 13px;
+    margin-bottom: -1px;
+    margin-left: 8px;
+}
+
+.connect-wallet__button:hover{
+    cursor: pointer;
+    opacity: .85;
+}
+
+.settings-button{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.settings-button svg {
+    width: 100%;
+    height: 100%;
+    fill: #82828f;
+}
+
+@media screen and (max-width: 1035px) {
+    .header-container__logo_mobile{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .header-container__logo_mobile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-container__logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .burger-menu {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .header-container__menu{
+        display: none;
+    }
+
+    .header-container {
+        padding: 20px;
+    }
+    .network-dropdown{
+        display: none;
+    }
+}

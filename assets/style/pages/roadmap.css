@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:  0 auto;
+    border: 1px solid #ffffff05;
+    margin-bottom: 100px;
+}
+
+.first-section .leftside {
+    width: 50%;
+}
+
+.first-section .leftside img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.rightside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.rightside .item {
+    border: 1px solid #ffffff17;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 400px;
+    font-size: 22px;
+    background: radial-gradient(circle at top center, #261c12, transparent);
+    padding: 30px;
+    font-family: 'Aptos', sans-serif;
+    margin-bottom: 30px;
+    transition: .2s;
+    position: relative;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.rightside .item .arrow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.rightside .item:hover {
+    cursor: pointer;
+    background: radial-gradient(circle at bottom center, #8e5611, transparent);
+}
+
+.rightside .item .arrow svg {
+    fill: #261c12;
+    width: 100%;
+    height: 100%;
+}
+
+.rightside .item .icon {
+    color: #ffffff30;
+    font-size: 60px;
+}
+
+.rightside .item .text {
+    height: 54px;
+}
+
+.second-section .header-title{
+    
+}
+
+
+@media screen and (max-width: 1060px) {
+    .rightside {
+        margin-left: 50px;
+    }
+
+    .first-section {
+        justify-content: space-between;
+    }
+
+    .container{
+        width: 100%;
+        max-width: unset;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightside {
+        margin-left: 0;
+    }
+
+    .rightside .item {
+        max-width: 100%;
+        width: unset;
+        padding: 20px;
+    }
+
+    .container {
+        padding-right: 10px;
+    }
+}
