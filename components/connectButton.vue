@@ -9,7 +9,7 @@ const { publicKey } = useWallet()
 
 <template>
  
-          <ClientOnly v-if="!publicKey">
+          <ClientOnly>
                 <WalletMultiButton />
                 <template #placeholder>
                     Loading
@@ -20,10 +20,7 @@ const { publicKey } = useWallet()
               <p v-else>Please connect your wallet</p>
           </div> -->
 
-          <div class="deal-buttons" v-if="publicKey">
-            <button>Long</button>
-            <button>Short</button>
-          </div>
+        
 </template>
 
 
@@ -31,6 +28,18 @@ const { publicKey } = useWallet()
 .swv-button-trigger {
     height: 40px !important;
     width: 100% !important;
+    justify-content: center !important;
+
+}
+
+.swv-dropdown {
+    width: 100% !important;
+
+}
+
+
+.swv-dropdown >>> button {
+    width: 100%;
 }
 
 @media screen and (max-width: 795px) {
@@ -43,28 +52,5 @@ const { publicKey } = useWallet()
         max-width: 100%;
         font-size: 12px;
     }
-}
-
-.deal-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.deal-buttons button:first-child {
-    background: #43cd73;
-    height: 50px;
-    width: 100%;
-    border-radius: 6px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.deal-buttons button:last-child {
-    background: #cd4f43;
-    height: 50px;
-    width: 100%;
-    border-radius: 6px;
-    color: #fff;
 }
 </style>

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 .first-section {
@@ -11,15 +12,30 @@
     margin:  0 auto;
     border: 1px solid #ffffff05;
     margin-bottom: 100px;
+    justify-content: space-between;
 }
 
 .first-section .leftside {
     width: 50%;
+    overflow: hidden;
 }
 
 .first-section .leftside img {
     width: 100%;
     height: 100%;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.Tokenomics {
+    color: #fff;
+    font-size: 42px;
+    font-family: 'Aptos-SemiBold', sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 
@@ -108,6 +124,14 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .first-section .leftside img {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+}
 
     .rightside {
         margin-left: 0;

@@ -1,5 +1,5 @@
 .btn {
-    background: #FA7F3B;
+    background: #F79848;
     color: #150000;
     padding: 12px 32px;
     outline: 0;
@@ -21,17 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-}
-
-/* Styles */
-
-.main-container .btn {
-    height: 61px;
 }
 
 .btn:hover{
     filter: brightness(1.1);
-    box-shadow: 0 0 32px 4px rgba(66,226,205,.122);
+    box-shadow: 0 0 32px 4px rgba(226, 215, 66, 0.222);
     cursor: pointer;
+    -webkit-filter: brightness(1.1);
 }

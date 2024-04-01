@@ -19,32 +19,41 @@
 }
 
 
+
+
 .buttons .transp-btn {
     padding: 16px 5px;
     background: linear-gradient(45deg, #12121a, #101018);
     border-radius: 4px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #FA7F3B;
+    font-size: 15px;
+    font-weight: 600;
+    color: #F79848;
     border: 1px solid #1c1f2e;
-    min-width: 195px;
     text-align: center;
     white-space: nowrap;
     display: block;
     transition: .2s;
     box-sizing: border-box;
-    width: 195px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 51px;
+    height: 45px;
     margin-right: 10px;
     -moz-transition:s .2;
     -ms-transition:s .2;
     -o-transition:s .2;
-    font-family: 'Aptos-SemiBold', sans-serif;
-    text-decoration: none;
-    font-size: 18px;
+}
+
+.header-button {
+    min-width: unset !important;
+    width: fit-content;
+    height: 45px;
+}
+
+.transp-btn {
+    width: 105px;
+    height: 45px;
+    box-sizing: border-box !important;
 }
 
 .buttons .transp-btn:hover {
@@ -78,3 +87,5 @@
         font-size: 14px;
     }
 }
+
+

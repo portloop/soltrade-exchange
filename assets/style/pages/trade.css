@@ -199,7 +199,7 @@ input[type=range] {
   background: #232630;
   height: 8px;
   margin-top: 15px;
-
+  margin-bottom: 20px;
 }
 
 /*progress support*/
@@ -633,5 +633,28 @@ input[type=range]::-ms-fill-lower {
 
   .main-trade__container {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  /* main-trade-rightside__header */
+
+  .crypto-price {
+    padding: 0 5px;
+  }
+
+  .star {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main-trade-rightside__header{
+    flex-wrap: wrap;
+  }
+
+  .crypto-price{
+    width: 170px;
+    margin-bottom: 3px;
   }
 }

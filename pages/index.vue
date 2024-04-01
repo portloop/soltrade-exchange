@@ -1,30 +1,30 @@
 <template>
     <headerComponent />
     <div class="main-container">
-        <div class="main-container__text">
+        <div class="main-container__text scroll-animation">
             DECENTRALIZED LEVERAGED TRADING
         </div>
-        <div class="main-container__subtitle">
+        <div class="main-container__subtitle fade-in scroll-animation">
             Crypto, forex, and commodities. No sign up required.
         </div>
-        <div class="main-container__buttons">
-            <orangeBtn text="Start trading" path="/trade" />
+        <div class="main-container__buttons scroll-animation">
+            <orangeBtn text="Start Trading" path="/trade" />
             <transparentBtn text="New to Solana?" path="/onramp" />
         </div>
-        <div class="main-container__main_img">
+        <div class="main-container__main_img scroll-animation">
             <a href="/trade">
                 <img src="../assets/img/desktop-ui-dark.png" alt="Main Image">
             </a>
         </div>
 
 
-        <div class="benefits-container">
-            <div class="benefits-container__title">
+        <div class="benefits-container ">
+            <div class="benefits-container__title scroll-animation">
                 Leveraged Trading on <span class="color-word">Solana</span>
             </div>
 
-            <div class="benefits-container__benefit_box">
-                <div class="benefit-box__item">
+            <div class="benefits-container__benefit_box scroll-animation">
+                <div class="benefit-box__item fade-in">
                     <div class="benefit-item__top">
                         <div class="benefit-item_top__image">
                             <img src="../assets/img/benefit-items/Solana.svg" alt="Solana Icon">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="benefit-box__item">
+                <div class="benefit-box__item fade-in">
                     <div class="benefit-item__top">
                         <div class="benefit-item_top__image">
                             <img src="../assets/img/benefit-items/decentralized-svgrepo-com.svg" alt="Solana Icon">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <div class="benefit-box__item">
+                <div class="benefit-box__item fade-in">
                     <div class="benefit-item__top">
                         <div class="benefit-item_top__image">
                             <img src="../assets/img/benefit-items/access.svg" alt="Solana Icon">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div class="benefit-box__item">
+                <div class="benefit-box__item fade-in">
                     <div class="benefit-item__top">
                         <div class="benefit-item_top__image">
                             <img src="../assets/img/benefit-items/tether.svg" alt="Solana Icon">
@@ -88,28 +88,82 @@
         </div>
     </div>
 
-    <div class="swap-section">
-        <iframe height="500" 
+    <div class="swap-section scroll-animation" >
+        <div class="stars-background">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </div>
+        <div class="swap-header">
+                <img src="../assets/img/transp-full-logo.png" alt="solTrade Logo">
+            <div class="text">TRADE/SOL</div>
+        </div>
+
+        <div class="swap-container">
+
+
+
+            <div class="token-info">
+                <div class="title">
+                    <div class="logo">
+                        <img src="../assets/img/transp_logo.png" alt="">
+                    </div>
+                    <div class="name">
+                        solTrade Token Info
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="adress bold">
+                        Presale SOL Deposit Address: 
+                    </div>
+                    <div class="asd">
+                        8FAtw9FJREB4LUDPmVz9baVoyxtK1iDCqwYN49jdFWR9
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="adress bold">
+                        Contract Address: 
+                    </div>
+                    <div class="adress">
+                        Coming soon
+                    </div>
+                </div>
+
+                <div class="description">
+                    <div class="adress">
+                      <span class="bold">Supply</span>: 250,000,000
+                    </div>
+                    <div class="adress">
+                        <span class="bold">Transfer Tax</span>: 1.0%
+                    </div>
+
+                    <div class="adress">
+                        <span class="bold">Launch Date</span>: 4/20/2024
+                    </div>
+
+                    <div class="adress">
+                        <span class="bold">Ticker</span>: TRADE
+                    </div>
+                </div>
+            </div>
+            <div class="soltrade-ico">
+                <img src="../assets/img/transp_logo.png" alt="">
+            </div>
+            <div class="swap-box">
+                <iframe height="500" 
             src="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=Es9vMFrzaCERmJfrF4" frameborder="0"></iframe>
+            </div>
+        </div>
+     
+        
     </div>
 
-    <div class="community-container">
-        <div class="cs-title">
+    <div class="community-container scroll-animation">
+        <div class="cs-title fade-in">
             Join our Community
         </div>
         <div class="cs-buttons">
-            <a class="button">
-                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord"
-                    class="svg-inline--fa fa-discord " role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512">
-                    <path fill="currentColor"
-                        d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
-                    </path>
-                </svg>
-                <div class="cs-titl">Discord</div>
-            </a>
-
-            <a class="button">
+            <a class="button" href="https://t.me/joinsoltrade" target="_blank">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram"
                     class="svg-inline--fa fa-telegram " role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512">
@@ -120,7 +174,7 @@
                 <div class="cs-titl">Telegram</div>
             </a>
 
-            <a class="button">
+            <a class="button" href="https://twitter.com/soltradeapp" target="_blank">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                     class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
@@ -138,6 +192,9 @@
 import headerComponent from '~/components/headerComponent.vue';
 import orangeBtn from '~/components/orangeBtn.vue';
 import transparentBtn from '~/components/transparentButton.vue'
+
+import { onMounted, ref } from 'vue';
+
 import footerComponent from '~/components/footerComponent.vue'
 export default {
     components: {
@@ -145,9 +202,43 @@ export default {
         orangeBtn,
         transparentBtn,
         footerComponent
+    },
+
+    mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+    this.handleScroll()
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const elements = document.querySelectorAll('.scroll-animation')
+      const windowHeight = window.innerHeight
+      
+      elements.forEach(element => {
+        const positionFromTop = element.getBoundingClientRect().top
+        const isElementVisible = positionFromTop - windowHeight <= 0
+        
+        if (isElementVisible) {
+          element.classList.add('animate__animated', 'animate__fadeInUp')
+        }
+      })
     }
+  }
+
+   
 }
 </script>
 <style scoped>
 @import url(../assets/style/pages/index.css);
+
+.scroll-animation {
+    opacity: 0; /* Начальное значение прозрачности (невидимый) */
+    transition: opacity 1s ease; /* Плавное изменение прозрачности */
+  }
+  
+  .scroll-animation.animate__fadeInUp {
+    opacity: 1; /* Конечное значение прозрачности (полностью видимый) */
+  }
 </style>

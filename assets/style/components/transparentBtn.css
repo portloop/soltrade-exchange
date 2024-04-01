@@ -4,7 +4,7 @@
     border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
-    color: #FA7F3B;
+    color: #F79848;
     border: 1px solid #1c1f2e;
     min-width: 195px;
     text-align: center;
@@ -15,9 +15,6 @@
     -moz-transition: .2s;
     -ms-transition: .2s;
     -o-transition: .2s;
-    font-family: 'Aptos-SemiBold',sans-serif;
-    text-decoration: none;
-    font-size: 18px;
 }
 
 .btn:hover{

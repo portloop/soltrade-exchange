@@ -1,11 +1,20 @@
 // // https://nuxt.com/docs/api/configuration/nuxt-config
 // export default defineNuxtConfig({
 //   devtools: { enabled: true }
+
 // })
+// import scrollAnimation from '~/plugins/scrollAnimation.js'
 
 
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
+  // plugins: [
+  //   { src: '~/plugins/scrollAnimation.js', mode: 'client' }
+  //  ],
+  plugins: [
+    '~/plugins/scrollAnimation.js'
+  ],
+  
   vite: {
     esbuild: {
       target: "esnext",
@@ -23,4 +32,5 @@ export default defineNuxtConfig({
       "process.env.BROWSER": true,
     },
   },
+  
 });

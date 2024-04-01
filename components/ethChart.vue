@@ -13,7 +13,7 @@
       script.async = true;
       script.innerHTML = JSON.stringify({
         autosize: true,
-        symbol: 'COINBASE:BTCUSD',
+        symbol: 'COINBASE:ETHUSD',
         interval: 'D',
         timezone: 'Etc/UTC',
         theme: 'dark',

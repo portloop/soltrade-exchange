@@ -13,7 +13,7 @@ export default async function (req, res) {
     console.log('Client connected');
 
     ws.on('message', (message) => {
-      // console.log('Received:', message);
+      console.log('Received:', message);
     });
 
     ws.send('Hello from WebSocket server!');

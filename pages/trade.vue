@@ -2,7 +2,7 @@
     <tradeHeader />
     <div class="main-trade__container">
         <div class="main-trade__leftside">
-            <div class="deal-block">
+            <div class="deal-block" v-if="dealSectionActionTab">
                 <div class="deal-block__header">
                     <div class="deal-block__header_item" @click="changeToLong"
                         :class="{ 'active': this.dealSectionActionTab == 'long' }">
@@ -30,10 +30,10 @@
 
                 </div>
                 <div class="deal-amount__container">
-                    <input type="text" value="101.1">
+                    <input type="text" value="50" max="20000">
 
                     <div class="deal-amount-title">
-                        Collateral <span class="light-text">(100.1 - 250,0k)</span>
+                        Collateral <span class="light-text">(50 - 20,0k)</span>
                     </div>
                     <a class="deal-amount-link" href='/onramp'>
                         Get Collateral
@@ -54,7 +54,8 @@
                     <input class="styled-slider slider-progress" v-model="dealLeverage" type="range" min="2" max="150"
                         step="2" />
                 </div>
-                <connectButtonLong class="deal-connect__button" />
+                <!-- <button class="deal-connect__button">Connect Wallet</button> -->
+                <connectButtonLong />
             </div>
         </div>
         <div class="main-trade__rightside">
@@ -68,7 +69,18 @@
                         </path>
                     </svg>
                 </div>
-                <div class="crypto-price">
+                <div class="crypto-price" @click="this.activeToken = 'sol'">
+                    <div class="leftside">
+                        <img src="../assets/img/solana-icon.svg" alt="Solana Logo">
+                        <span>SOL/USD</span>
+                    </div>
+                    <div class="rightside"
+                        :class="{ 'green': this.solPrice > this.prevSolPrice, 'red': this.prevSolPrice >= this.solPrice }">
+                        {{ solPrice }}
+                    </div>
+                </div>
+
+                <div class="crypto-price" @click="this.activeToken = 'btc'">
                     <div class="leftside">
                         <img src="../assets/img/btc.35b3abfb.svg" alt="Bitcoin Logo">
                         <span>BTC/USD</span>
@@ -79,14 +91,16 @@
                     </div>
                 </div>
 
-                <div class="crypto-price">
+              
+
+                <div class="crypto-price" @click="this.activeToken = 'eth'">
                     <div class="leftside">
-                        <img src="../assets/img/solana-icon.svg" alt="Solana Logo">
-                        <span>SOL/USD</span>
+                        <img src="../assets/img/eth-icon.svg" alt="Solana Logo">
+                        <span>ETH/USD</span>
                     </div>
                     <div class="rightside"
-                        :class="{ 'green': this.solPrice > this.prevSolPrice, 'red': this.prevSolPrice >= this.solPrice }">
-                        {{ solPrice }}
+                        :class="{ 'green': this.ethPrice > this.prevEthPrice, 'red': this.prevEthPrice >= this.ethPrice }">
+                        {{ ethPrice }}
                     </div>
                 </div>
             </div>
@@ -96,6 +110,7 @@
                     @click="this.showDropdown ? this.showDropdown = false : this.showDropdown = true;">
                     <img src="../assets/img/btc.35b3abfb.svg" v-if="this.activeToken == 'btc'" alt="Bitcoin Icon">
                     <img src="../assets/img/solana-icon.svg" v-if="this.activeToken == 'sol'" alt="Solana Icon">
+                    <img src="../assets/img/eth-icon.svg" v-if="this.activeToken == 'eth'" alt="ETH Icon">
                     <div class="token-info" v-if="this.activeToken == 'btc'">
                         <div class="token-info__name">BTC/USD</div>
                         <div class="token-info__description">
@@ -108,6 +123,12 @@
                             Solana to US Dollar
                         </div>
                     </div>
+                    <div class="token-info" v-if="this.activeToken == 'eth'">
+                        <div class="token-info__name">ETH/USD</div>
+                        <div class="token-info__description">
+                            Ethereum to US Dollar
+                        </div>
+                    </div>
                     <div class="arrow">
                         <svg width="20" height="20" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                             stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -115,6 +136,8 @@
                                 d="m16.843 10.211c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291 1.002-1.299 3.044-3.945 4.243-5.498z" />
                         </svg>
                     </div>
+
+                    
 
 
                     <div class="main-crypto__price_dropdown" v-show="showDropdown">
@@ -137,16 +160,28 @@
                             </div>
                         </div>
 
+                        <div class="token" @click="this.activeToken = 'eth'">
+                            <img src="../assets/img/eth-icon.svg" alt="ETH Icon">
+                            <div class="token-info">
+                                <div class="token-info__name">ETH/USD</div>
+                                <div class="token-info__description">
+                                    Ethereum to US Dollar
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="token-price">
                     <div v-if="this.activeToken == 'btc'">{{ btcPrice }}</div>
                     <div v-if="this.activeToken == 'sol'">{{ solPrice }}</div>
+                    <div v-if="this.activeToken == 'eth'">{{ ethPrice }}</div>
                 </div>
             </div>
 
             <btcChart class="chart" v-if="this.activeToken == 'btc'" />
             <SolChart class="chart" v-if="this.activeToken == 'sol'" />
+            <SolChart class="chart" v-if="this.activeToken == 'eth'" />
             <div class="order-list">
                 <div class="order-list__header">
                     <div class="leftside">
@@ -196,14 +231,15 @@ import tradeHeader from '../components/tradeHeader.vue';
 import { connectWebSocket } from '~/services/websocketservice';
 import btcChart from '~/components/btcChart.vue'
 import solChart from '~/components/solChart.vue'
-import connectButtonLong from '~/components/connectButtonLong.vue';
-
+import ethChart from '~/components/ethChart.vue'
+// import connectButton from '~/components/connectButton.vue'
+import connectButtonLong from '~~/components/connectButtonLong.vue';
 
 export default {
     components: {
         tradeHeader,
         btcChart,
-        solChart,
+        // connectButton,
         connectButtonLong
     },
 
@@ -214,13 +250,14 @@ export default {
             dealLeverage: 0,
             btcPrice: null,
             solPrice: null,
+            ethPrice: null,
             showDropdown: false,
             activeHistoryTab: 'orders',
 
             prevBtcPrice: null,
             prevSolPrice: null,
-            activeToken: 'btc',
-
+            prevEthPrice: null,
+            activeToken: 'btc'
         }
     },
 
@@ -241,6 +278,10 @@ export default {
             this.prevSolPrice = this.solPrice
             this.solPrice = parseFloat(price).toFixed(2);;
         },
+        updateETHPrice(price) {
+            this.prevEthPrice = this.ethPrice
+            this.ethPrice = parseFloat(price).toFixed(2);;
+        },
 
         calculateChangeAndPercentage(oldValue, newValue) {
             const change = newValue - oldValue;
@@ -257,7 +298,7 @@ export default {
             e.addEventListener('input', () => e.style.setProperty('--value', e.value));
         }
 
-        connectWebSocket(this.updateBTCPrice, this.updateSOLPrice);
+        connectWebSocket(this.updateBTCPrice, this.updateSOLPrice, this.updateETHPrice);
 
     },
 

@@ -12,19 +12,7 @@
                     <a href="/trade" class="header-container__menu_item active"> 
                         Trade
                     </a>
-                    <a href="/" class="header-container__menu_item"> 
-                        Portfolio
-                    </a>
-                    <a href="/earn" class="header-container__menu_item"> 
-                        Earn
-                    </a>
-                    <a href="/stats" class="header-container__menu_item"> 
-                        Stats
-                    </a>
-                    <a href="/more" class="header-container__menu_item"> 
-                        More
-                    </a>
-                    <a href="/buy" class="header-container__menu_item"> 
+                    <a href="/onramp" class="header-container__menu_item"> 
                         Buy Crypto
                     </a>
                 </div>
@@ -63,11 +51,9 @@
                         <div class="arrow">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down NetworkDropdownToggle_arrow__3HcBw" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
                         </div>
-                        
                     </div>
-        <connectBtn />
-
                 </div>
+                <connectButton class="connect-btn"/>
                 <!-- <div class="connect-wallet__button">
                     <span>Connect Wallet</span>
                     <div class="icon">
@@ -85,10 +71,10 @@
     </header>
 </template>
 <script>
-import connectBtn from './connectBtn.vue';
+import connectButton from './connectButton.vue';
 export default {
 components: {
-    connectBtn
+    connectButton,
 }
 }
 </script>

@@ -15,7 +15,7 @@ export default {
         script.innerHTML = JSON.stringify(
             {
                 "autosize": true,
-                "symbol": "CRYPTOCAP:SOL",
+                "symbol": "COINBASE:SOLUSD",
                 "interval": "D",
                 "timezone": "Etc/UTC",
                 "theme": "dark",
