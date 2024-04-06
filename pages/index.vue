@@ -1,4 +1,9 @@
 <template>
+    <div class="stars-background">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
     <headerComponent />
     <div class="main-container">
         <div class="main-container__text scroll-animation">
@@ -10,6 +15,9 @@
         <div class="main-container__buttons scroll-animation">
             <orangeBtn text="Start Trading" path="/trade" />
             <transparentBtn text="New to Solana?" path="/onramp" />
+        </div>
+        <div class="powered-b mx-auto flex justify-center mt-10">
+            <img width="150" src="../assets/img/poweredbypyth.png" alt="">
         </div>
         <div class="main-container__main_img scroll-animation">
             <a href="/trade">
@@ -89,14 +97,9 @@
     </div>
 
     <div class="swap-section scroll-animation" >
-        <div class="stars-background">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </div>
+       
         <div class="swap-header">
                 <img src="../assets/img/transp-full-logo.png" alt="solTrade Logo">
-            <div class="text">TRADE/SOL</div>
         </div>
 
         <div class="swap-container">
@@ -109,14 +112,14 @@
                         <img src="../assets/img/transp_logo.png" alt="">
                     </div>
                     <div class="name">
-                        solTrade Token Info
+                        solTrade Token
                     </div>
                 </div>
                 <div class="description">
                     <div class="adress bold">
                         Presale SOL Deposit Address: 
                     </div>
-                    <div class="asd">
+                    <div class="text-sm">
                         8FAtw9FJREB4LUDPmVz9baVoyxtK1iDCqwYN49jdFWR9
                     </div>
                 </div>
@@ -131,18 +134,13 @@
 
                 <div class="description">
                     <div class="adress">
-                      <span class="bold">Supply</span>: 250,000,000
-                    </div>
-                    <div class="adress">
-                        <span class="bold">Transfer Tax</span>: 1.0%
-                    </div>
-
-                    <div class="adress">
                         <span class="bold">Launch Date</span>: 4/20/2024
                     </div>
-
                     <div class="adress">
                         <span class="bold">Ticker</span>: TRADE
+                    </div>
+                    <div class="adress">
+                      <span class="bold">Supply</span>: 250,000,000
                     </div>
                 </div>
             </div>

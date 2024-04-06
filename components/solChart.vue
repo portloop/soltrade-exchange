@@ -16,7 +16,7 @@ export default {
             {
                 "autosize": true,
                 "symbol": "COINBASE:SOLUSD",
-                "interval": "D",
+                "interval": "30",
                 "timezone": "Etc/UTC",
                 "theme": "dark",
                 "style": "1",

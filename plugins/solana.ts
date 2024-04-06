@@ -11,7 +11,8 @@ const walletOptions = {
   wallets: [
     new PhantomWalletAdapter(),
     // new SlopeWalletAdapter(),
-    new SolflareWalletAdapter({ network: WalletAdapterNetwork.Devnet }),
+    // { network: WalletAdapterNetwork.Devnet }
+    new SolflareWalletAdapter(),
   ],
   autoConnect: true,
 };

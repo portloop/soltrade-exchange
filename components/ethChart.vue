@@ -14,7 +14,7 @@
       script.innerHTML = JSON.stringify({
         autosize: true,
         symbol: 'COINBASE:ETHUSD',
-        interval: 'D',
+        interval: '30',
         timezone: 'Etc/UTC',
         theme: 'dark',
         style: '1',

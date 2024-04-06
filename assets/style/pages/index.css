@@ -63,6 +63,11 @@ body {
     margin-right: 16px;
 }
 
+.main-container__buttons button:last-child {
+    font-family: 'Aptos', sans-serif;
+    font-weight: 400 !important;
+}
+
 .main-container__main_img {
     border-radius: 6px;
     border: 1px solid #182227;
@@ -212,13 +217,13 @@ body {
     box-shadow: inset 0px -20px 200px 100px #0D0D17;
 }
 
-.swap-section .stars-background {
+.stars-background {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .swap-container{
@@ -319,7 +324,7 @@ body {
     background: radial-gradient(circle at top center, #261c12, transparent);
     border-radius: 6px;
     margin: 0 auto;
-    border: 1px solid rgba(40, 83, 88, .231);
+    border: 1px solid #191415 ;
     margin-bottom: 200px;
 }
 
@@ -331,7 +336,7 @@ body {
 
 .cs-buttons .button {
     padding: 12px;
-    border: 1px solid rgba(51, 95, 121, .376);
+    border: 1px solid #33292b;
     background: rgba(46, 88, 105, .102);
     border-radius: 4px;
     color: #e3e6f7;
@@ -374,7 +379,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-    text-shadow: 0 0 32px rgba(41,255,209,.2);
+    text-shadow: 0 0 32px #191415;
     font-family: 'Aptos-Bold', sans-serif;
     font-size: 37px;
     text-align: center;

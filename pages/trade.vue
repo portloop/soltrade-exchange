@@ -111,18 +111,19 @@
                     <img src="../assets/img/btc.35b3abfb.svg" v-if="this.activeToken == 'btc'" alt="Bitcoin Icon">
                     <img src="../assets/img/solana-icon.svg" v-if="this.activeToken == 'sol'" alt="Solana Icon">
                     <img src="../assets/img/eth-icon.svg" v-if="this.activeToken == 'eth'" alt="ETH Icon">
-                    <div class="token-info" v-if="this.activeToken == 'btc'">
-                        <div class="token-info__name">BTC/USD</div>
-                        <div class="token-info__description">
-                            Bitcoin to US Dollar
-                        </div>
-                    </div>
                     <div class="token-info" v-if="this.activeToken == 'sol'">
                         <div class="token-info__name">SOL/USD</div>
                         <div class="token-info__description">
                             Solana to US Dollar
                         </div>
                     </div>
+                    <div class="token-info" v-if="this.activeToken == 'btc'">
+                        <div class="token-info__name">BTC/USD</div>
+                        <div class="token-info__description">
+                            Bitcoin to US Dollar
+                        </div>
+                    </div>
+                  
                     <div class="token-info" v-if="this.activeToken == 'eth'">
                         <div class="token-info__name">ETH/USD</div>
                         <div class="token-info__description">
@@ -141,15 +142,6 @@
 
 
                     <div class="main-crypto__price_dropdown" v-show="showDropdown">
-                        <div class="token" @click="this.activeToken = 'btc'">
-                            <img src="../assets/img/btc.35b3abfb.svg" alt="Bitcoin Icon">
-                            <div class="token-info">
-                                <div class="token-info__name">BTC/USD</div>
-                                <div class="token-info__description">
-                                    Bitcoin to US Dollar
-                                </div>
-                            </div>
-                        </div>
                         <div class="token" @click="this.activeToken = 'sol'">
                             <img src="../assets/img/solana-icon.svg" alt="Bitcoin Icon">
                             <div class="token-info">
@@ -159,6 +151,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="token" @click="this.activeToken = 'btc'">
+                            <img src="../assets/img/btc.35b3abfb.svg" alt="Bitcoin Icon">
+                            <div class="token-info">
+                                <div class="token-info__name">BTC/USD</div>
+                                <div class="token-info__description">
+                                    Bitcoin to US Dollar
+                                </div>
+                            </div>
+                        </div>
+                      
 
                         <div class="token" @click="this.activeToken = 'eth'">
                             <img src="../assets/img/eth-icon.svg" alt="ETH Icon">
@@ -257,7 +259,7 @@ export default {
             prevBtcPrice: null,
             prevSolPrice: null,
             prevEthPrice: null,
-            activeToken: 'btc'
+            activeToken: 'sol'
         }
     },
 

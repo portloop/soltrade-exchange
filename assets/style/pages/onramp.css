@@ -23,11 +23,12 @@
 }
 
 .text-box .description {
-        font-size: 20px;
+    font-size: 20px;
     line-height: 1.6;
     color: #dddde3;
     font-family: 'Aptos', sans-serif;
 }
+
 
 .text-box .description img {
     margin: 0 5px;

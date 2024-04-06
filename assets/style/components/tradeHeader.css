@@ -209,3 +209,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .powered-by {
+        display: none;
+    }
+}

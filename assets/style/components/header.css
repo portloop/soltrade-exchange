@@ -54,6 +54,7 @@
     width: 105px;
     height: 45px;
     box-sizing: border-box !important;
+    font-size: 18px;
 }
 
 .buttons .transp-btn:hover {
