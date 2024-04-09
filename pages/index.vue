@@ -17,7 +17,7 @@
             <transparentBtn text="New to Solana?" path="/onramp" />
         </div>
         <div class="powered-b mx-auto flex justify-center mt-10">
-            <img width="150" src="../assets/img/poweredbypyth.png" alt="">
+            <img width="100" height="100" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
         </div>
         <div class="main-container__main_img scroll-animation">
             <a href="/trade">
@@ -190,7 +190,6 @@
 import headerComponent from '~/components/headerComponent.vue';
 import orangeBtn from '~/components/orangeBtn.vue';
 import transparentBtn from '~/components/transparentButton.vue'
-
 import { onMounted, ref } from 'vue';
 
 import footerComponent from '~/components/footerComponent.vue'
@@ -199,7 +198,7 @@ export default {
         headerComponent,
         orangeBtn,
         transparentBtn,
-        footerComponent
+        footerComponent,
     },
 
     mounted() {

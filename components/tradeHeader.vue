@@ -19,7 +19,7 @@
             </div>
             <div class="header-container__rightside">
                 <div class="powered-by mr-4">
-                    <img src="../assets/img/poweredbypyth.png" alt="">
+                    <img width="65" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
                 </div>
                 <div class="network-dropdown">
                     <div class="network-dropdown__name">
@@ -68,13 +68,16 @@
                 </div>
             </div>
         </div>
+        <!-- <Connector /> -->
     </header>
 </template>
 <script>
 import connectButton from './connectButton.vue';
+// import Connector from './Connector.vue'
 export default {
 components: {
     connectButton,
+    // Connector
 }
 }
 </script>

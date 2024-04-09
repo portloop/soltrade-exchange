@@ -219,10 +219,9 @@
                     </div>
                 </div>
                 <div class="order-list__body">
-                    <span>Wallet not connected
-                    </span>
-                    <button>Connect</button>
-                </div>
+                    <span v-if="!showText">Wallet not connected</span>
+                    <transactionConnectBtn @publicKeyReceived="handlePublicKeyReceived" />
+                  </div>
             </div>
         </div>
 
@@ -233,16 +232,20 @@ import tradeHeader from '../components/tradeHeader.vue';
 import { connectWebSocket } from '~/services/websocketservice';
 import btcChart from '~/components/btcChart.vue'
 import solChart from '~/components/solChart.vue'
+import transactionConnectBtn from '~/components/transactionConnectBtn.vue';
 import ethChart from '~/components/ethChart.vue'
 // import connectButton from '~/components/connectButton.vue'
 import connectButtonLong from '~~/components/connectButtonLong.vue';
+import { defineComponent, ref } from 'vue'
+
 
 export default {
     components: {
         tradeHeader,
         btcChart,
         // connectButton,
-        connectButtonLong
+        connectButtonLong,
+        transactionConnectBtn
     },
 
     data() {
@@ -303,6 +306,19 @@ export default {
         connectWebSocket(this.updateBTCPrice, this.updateSOLPrice, this.updateETHPrice);
 
     },
+
+    setup() {
+    const showText = ref(true)
+
+    const handlePublicKeyReceived = () => {
+      showText.value = false
+    }
+
+    return {
+      showText,
+      handlePublicKeyReceived
+    }
+  }
 
 
 }

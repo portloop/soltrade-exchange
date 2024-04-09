@@ -658,3 +658,29 @@ input[type=range]::-ms-fill-lower {
     margin-bottom: 3px;
   }
 }
+
+
+.order-list__body:deep(button) {
+  background-color: transparent;
+    border: 1px solid #232325;
+    border-radius: var(--br-2);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-family: Aptos-SemiBold, sans-serif;
+    font-size: 14px;
+    height: 32px;
+    min-width: 80px;
+    text-transform: capitalize;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0;
+    height: 32px;
+    font-size: 13px;
+    align-items: center;
+    color: #82828f;
+    display: flex;
+    justify-content: center;
+}
