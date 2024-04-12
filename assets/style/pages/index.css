@@ -230,6 +230,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -252,7 +253,7 @@ body {
     box-shadow: 0 0 32px 4px rgba(226, 215, 66, 0.222);
     cursor: pointer;
     -webkit-filter: brightness(1.1);
-
+    margin-bottom: 50px;
 }
 
 .swap-box {
@@ -271,6 +272,7 @@ body {
     padding: 40px;
     box-sizing: border-box;
     background: #0D0D17;
+    margin-bottom: 50px;
 }
 
 .token-info .title {

@@ -11,6 +11,7 @@
     border: 1px solid #202027;
     max-width: 356px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .deal-block__header{
@@ -116,7 +117,7 @@
     outline: 0;
     color: #fff;
     font-size: 26px;
-    padding: 30px 60px 5px 5px;
+    padding: 30px 0px 5px 5px;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: 'Aptos-Bold', sans-serif;

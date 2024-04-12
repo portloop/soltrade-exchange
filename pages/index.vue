@@ -16,7 +16,7 @@
             <orangeBtn text="Start Trading" path="/trade" />
             <transparentBtn text="New to Solana?" path="/onramp" />
         </div>
-        <div class="powered-b mx-auto flex justify-center mt-10">
+        <div class="powered-b scroll-animation mx-auto flex justify-center mt-10">
             <img width="100" height="100" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
         </div>
         <div class="main-container__main_img scroll-animation">
@@ -133,9 +133,7 @@
                 </div>
 
                 <div class="description">
-                    <div class="adress">
-                        <span class="bold">Launch Date</span>: 4/20/2024
-                    </div>
+                   
                     <div class="adress">
                         <span class="bold">Ticker</span>: TRADE
                     </div>
@@ -231,11 +229,11 @@ export default {
 @import url(../assets/style/pages/index.css);
 
 .scroll-animation {
-    opacity: 0; /* Начальное значение прозрачности (невидимый) */
-    transition: opacity 1s ease; /* Плавное изменение прозрачности */
+    opacity: 0; 
+    transition: opacity 1s ease;
   }
   
   .scroll-animation.animate__fadeInUp {
-    opacity: 1; /* Конечное значение прозрачности (полностью видимый) */
+    opacity: 1;
   }
 </style>
