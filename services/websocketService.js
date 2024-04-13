@@ -1,19 +1,14 @@
-// websocketservice.js
 
 let socketBTC;
 let socketSOL;
 
 export function connectWebSocket(updateBTCPrice, updateSOLPrice, updateETHPrice) {
-    const socketUrl = 'wss://stream.binance.com:9443/ws';
-  
-    const subscriptionMessage = {
-        method: 'SUBSCRIBE',
-        params: [
-            'btcusdt@aggTrade', // BTC price
-            'solusdt@aggTrade',  // SOL price
-            'ethusdt@aggTrade'  // ETH price
-        ],
-        id: 1
+
+    let socketUrl = 'wss://ws-feed.pro.coinbase.com';
+    let subscriptionMessage = {
+        type: 'subscribe',
+        product_ids: ['BTC-USD', 'SOL-USD', 'ETH-USD'],
+        channels: ['ticker']
     };
 
     const socket = new WebSocket(socketUrl);
@@ -24,16 +19,15 @@ export function connectWebSocket(updateBTCPrice, updateSOLPrice, updateETHPrice)
 
     socket.onmessage = (event) => {
         const eventData = JSON.parse(event.data);
-        if (eventData.s === 'BTCUSDT') {
-            updateBTCPrice(eventData.p);
-        } if (eventData.s === 'SOLUSDT') {
-            updateSOLPrice(eventData.p);
-        } else if (eventData.s === 'ETHUSDT') {
-            updateETHPrice(eventData.p);
+        if (eventData.product_id === 'BTC-USD') {
+            updateBTCPrice(eventData.price);
+        } else if (eventData.product_id === 'SOL-USD') {
+            updateSOLPrice(eventData.price);
+        } else if (eventData.product_id === 'ETH-USD') {
+            updateETHPrice(eventData.price);
         }
-
-        
     };
+    
 
     socket.onclose = () => {
         connectWebSocket(updateBTCPrice, updateSOLPrice, updateETHPrice);

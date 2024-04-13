@@ -15,6 +15,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.32",
     "@solana/web3.js": "^1.91.4",
     "animate.css": "^4.1.1",
+    "geoip-lite": "^1.4.10",
     "install": "^0.13.0",
     "npm": "^10.5.0",
     "nuxt": "^3.11.1",

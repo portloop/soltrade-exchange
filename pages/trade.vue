@@ -183,7 +183,7 @@
 
             <btcChart class="chart" v-if="this.activeToken == 'btc'" />
             <SolChart class="chart" v-if="this.activeToken == 'sol'" />
-            <SolChart class="chart" v-if="this.activeToken == 'eth'" />
+            <ethChart class="chart" v-if="this.activeToken == 'eth'" />
             <div class="order-list">
                 <div class="order-list__header">
                     <div class="leftside">
