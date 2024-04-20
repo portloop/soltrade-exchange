@@ -214,7 +214,6 @@ body {
     margin-bottom: 100px;
     position: relative;
     width: 100%;
-    box-shadow: inset 0px -20px 200px 100px #0D0D17;
 }
 
 .stars-background {
@@ -230,9 +229,9 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    max-width: 900px;
 }
 
 .swap-container .soltrade-ico {
@@ -299,6 +298,10 @@ body {
 .token-info .description {
     color: #fff;
     margin-bottom: 20px;
+}
+
+.token-info .description.mb-0 {
+    margin-bottom: 0;
 }
 
 .token-info .description .bold {

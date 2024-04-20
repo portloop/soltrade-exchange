@@ -12,6 +12,9 @@
                     <a href="/trade" class="header-container__menu_item active"> 
                         Trade
                     </a>
+                    <a href="/presale" class="header-container__menu_item"> 
+                        Presale
+                    </a>
                     <a href="/onramp" class="header-container__menu_item"> 
                         Buy Solana
                     </a>
@@ -19,7 +22,9 @@
             </div>
             <div class="header-container__rightside">
                 <div class="powered-by mr-4">
-                    <img width="65" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
+                    <a href="https://pyth.network/">
+                        <img width="65" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
+                    </a>
                 </div>
                 <div class="network-dropdown">
                     <div class="network-dropdown__name">

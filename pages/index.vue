@@ -14,10 +14,12 @@
         </div>
         <div class="main-container__buttons scroll-animation">
             <orangeBtn text="Start Trading" path="/trade" />
-            <transparentBtn text="New to Solana?" path="/onramp" />
+            <transparentBtn text="Presale" path="/presale" />
         </div>
         <div class="powered-b scroll-animation mx-auto flex justify-center mt-10">
-            <img width="100" height="100" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
+            <a href="https://pyth.network/">
+                <img width="100" height="100" src="../assets/img/pyth_logo_lockup_dark.svg" alt="">
+            </a>
         </div>
         <div class="main-container__main_img scroll-animation">
             <a href="/trade">
@@ -117,38 +119,43 @@
                 </div>
                 <div class="description">
                     <div class="adress bold">
-                        Presale SOL Deposit Address: 
+                        Presale SOL Deposit Address:
                     </div>
                     <div class="text-sm">
                         8FAtw9FJREB4LUDPmVz9baVoyxtK1iDCqwYN49jdFWR9
                     </div>
                 </div>
-                <div class="description">
-                    <div class="adress bold">
-                        Contract Address: 
+                <div class="description flex flex-row mb-0">
+                    <div class="adress  mr-2">
+                        Minimum per wallet: 
                     </div>
                     <div class="adress">
-                        Coming soon
+                        1 SOL
+                    </div>
+                </div>
+                <div class="description flex flex-row">
+                    <div class="adress  mr-2">
+                        Maximum per wallet:
+                    </div>
+                    <div class="adress">
+                        25 SOL
                     </div>
                 </div>
 
                 <div class="description">
                    
                     <div class="adress">
-                        <span class="bold">Ticker</span>: TRADE
+                       Ticker: <span class="bold">TRADE</span>
                     </div>
                     <div class="adress">
-                      <span class="bold">Supply</span>: 250,000,000
+                      Supply: 250,000,000
                     </div>
                 </div>
             </div>
             <div class="soltrade-ico">
                 <img src="../assets/img/transp_logo.png" alt="">
             </div>
-            <div class="swap-box">
-                <iframe height="500" 
-            src="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=Es9vMFrzaCERmJfrF4" frameborder="0"></iframe>
-            </div>
+          
         </div>
      
         

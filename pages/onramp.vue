@@ -48,7 +48,7 @@
                 Buy Solana
             </div>
             <div class="description">
-                Buy Solana <div><img class="solana-item" src="../assets/img/solana-icon.svg" alt="Solana Logo"></div> on
+                Buy Solana on
                 a centralized exchange like
                 Coinbase, Kraken, or Binance.
             </div>
@@ -214,5 +214,6 @@ export default {
 }
 </script>
 <style scoped>
+@import url(../assets/style/pages/index.css);
 @import url(../assets/style/pages/onramp.css);
 </style>
