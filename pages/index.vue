@@ -155,6 +155,52 @@
             <div class="soltrade-ico">
                 <img src="../assets/img/transp_logo.png" alt="">
             </div>
+
+            <div class="token-info bg-[#0D0D17] relative z-10">
+                <div class="title">
+                    <div class="logo">
+                        <img src="../assets/img/transp_logo.png" alt="">
+                    </div>
+                    <div class="name">
+                        Fairlaunch Details
+                    </div>
+                </div>
+              
+              
+                <div class="description flex flex-row">
+                    <div class="adress  mr-2">
+                        All presale deposits will be tracked and posted publicly on GitHub.
+                    </div>
+                </div>
+
+                <div class="description flex flex-row">
+                    <div class="adress  mr-2">
+                        Do not dust Presale Deposit Address.
+                    </div>
+                </div>
+                <div class="description flex flex-row mb-0">
+                    <div class="adress  mr-2">
+                        55% Presale
+                    </div>
+                </div>
+                <div class="description flex flex-row mb-0">
+                    <div class="adress  mr-2">
+                        30% LP
+                    </div>
+                </div>
+                <div class="description flex flex-row mb-0">
+                    <div class="adress  mr-2">
+                        10% CEX
+                    </div>
+                </div>
+                <div class="description flex flex-row mb-0">
+                    <div class="adress  mr-2">
+                        5% Team
+                    </div>
+                </div>
+
+               
+            </div>
           
         </div>
      

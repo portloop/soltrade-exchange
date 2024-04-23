@@ -13,8 +13,8 @@
                 <img class="screenshot" src="../assets/img/desktop-ui-dark.png" alt="">
             </div>
             <div class="rightside">
-                <div class="item">
-                    <div class="icon">
+                <div class="item first">
+                    <div class="icon" @click="this.$router.push('/presale')">
                         Presale
                     </div>
                    

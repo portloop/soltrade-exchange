@@ -82,8 +82,11 @@
     width: 40px;
 }
 
-.rightside .item:hover {
+  .rightside .item.first:hover{
     cursor: pointer;
+}
+
+.rightside .item:hover {
     background: radial-gradient(circle at bottom center, #8e5611, transparent);
 }
 

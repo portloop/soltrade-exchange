@@ -10,7 +10,7 @@
             Presale
         </div>
 
-        <div class="flex flex-col items-center mt-20">
+        <div class="flex flex-col lg:w-full xl:w-10/12 mx-auto xl:flex-row xl:justify-between items-center mt-20">
             <div class="token-info bg-[#0D0D17] relative z-10">
                 <div class="title">
                     <div class="logo">
