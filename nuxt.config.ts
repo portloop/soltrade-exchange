@@ -33,5 +33,14 @@ export default defineNuxtConfig({
       "process.env.BROWSER": true,
     },
   },
+
+  app: {
+    head: {
+      title: 'SolTrade - SolTrade Market',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      ]
+    }
+  }
   
 });

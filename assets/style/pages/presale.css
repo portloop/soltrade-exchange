@@ -38,7 +38,6 @@ body, html {
   #stars:after {
     content: " ";
     position: absolute;
-    top: 2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -55,7 +54,6 @@ body, html {
   #stars2:after {
     content: " ";
     position: absolute;
-    top: 2000px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -72,7 +70,6 @@ body, html {
   #stars3:after {
     content: " ";
     position: absolute;
-    top: 2000px;
     width: 3px;
     height: 3px;
     background: transparent;

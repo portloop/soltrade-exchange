@@ -24,7 +24,7 @@
 
                 <div class="item">
                     <div class="icon">
-                        Q3 2024
+                        Q2 2025
                     </div>
                     <div class="text">
                         Launch BTC/USD, SOL/USD,
@@ -35,7 +35,7 @@
 
                 <div class="item">
                     <div class="icon">
-                        Q3 2024
+                        Q2 2025
                     </div>
                     <div class="text">
                         USDT dividends to
@@ -46,7 +46,7 @@
 
                 <div class="item">
                     <div class="icon">
-                        Q4 2024
+                        Q3 2025
                     </div>
                     <div class="text">
                         Launch FX pairs & altcoins
