@@ -3,7 +3,7 @@
 export default function () {
   if (process.client) {
     function handleScroll() {
-      const elements = document.querySelectorAll('.scroll-animation');
+      const elements = document.querySelectorAll('.scroll-animations');
       const windowHeight = window.innerHeight;
     
       elements.forEach(element => {

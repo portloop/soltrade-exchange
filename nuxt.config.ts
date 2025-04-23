@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   //   { src: '~/plugins/scrollAnimation.js', mode: 'client' }
   //  ],
   plugins: [
-    '~/plugins/scrollAnimation.js',
+    // '~/plugins/scrollAnimation.js',
 
   ],
   
