@@ -46,7 +46,7 @@ const publicKeyReceived = () => {
 }
 
 
-.swv-dropdown >>> button {
+.swv-dropdown :deep(button) {
     width: 100%;
 }
 

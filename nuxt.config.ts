@@ -41,6 +41,19 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
       ]
     }
-  }
+  },
   
+  alias: {
+    assets: "/<rootDir>/assets/"
+  },
+  
+  // Ensure static assets are properly handled
+  nitro: {
+    publicAssets: [
+      {
+        dir: 'assets',
+        maxAge: 60 * 60 * 24 * 365 // 1 year
+      }
+    ]
+  }
 });

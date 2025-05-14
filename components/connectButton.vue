@@ -38,7 +38,7 @@ const { publicKey } = useWallet()
 }
 
 
-.swv-dropdown >>> button {
+.swv-dropdown :deep(button) {
     width: 100%;
 }
 
