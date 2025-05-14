@@ -673,7 +673,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta$3?.redirect,
-    component: () => import('./onramp-CMEkQRa2.mjs').then(m => m.default || m)
+    component: () => import('./onramp-BatUiGGg.mjs').then(m => m.default || m)
   },
   {
     name: "presale",
@@ -681,7 +681,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta$2?.redirect,
-    component: () => import('./presale-D6YSjf3K.mjs').then(m => m.default || m)
+    component: () => import('./presale-NZ4b2--p.mjs').then(m => m.default || m)
   },
   {
     name: "roadmap",
@@ -689,7 +689,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta$1?.redirect,
-    component: () => import('./roadmap-CK5Dy42K.mjs').then(m => m.default || m)
+    component: () => import('./roadmap-CAzd0-pT.mjs').then(m => m.default || m)
   },
   {
     name: "trade",
@@ -1242,8 +1242,8 @@ const description = _error.message || _error.toString();
 const stack = undefined;
 
 // TODO: Investigate side-effect issue with imports
-const _Error404 = defineAsyncComponent(() => import('./error-404-DEUALIH4.mjs').then(r => r.default || r));
-const _Error = defineAsyncComponent(() => import('./error-500-DhBic0uC.mjs').then(r => r.default || r));
+const _Error404 = defineAsyncComponent(() => import('./error-404-BWCjjCwo.mjs').then(r => r.default || r));
+const _Error = defineAsyncComponent(() => import('./error-500-BSZgLKLh.mjs').then(r => r.default || r));
 
 const ErrorTemplate = is404 ? _Error404 : _Error;
 
