@@ -229,7 +229,7 @@
 </template>
 <script>
 import tradeHeader from '../components/tradeHeader.vue';
-import { connectWebSocket } from '~/services/websocketservice';
+import { connectWebSocket } from '../services/websocketService.js';
 import btcChart from '~/components/btcChart.vue'
 import solChart from '~/components/solChart.vue'
 import transactionConnectBtn from '~/components/transactionConnectBtn.vue';

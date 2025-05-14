@@ -178,7 +178,7 @@
                     <div class="tb-title">
                         Approve connection
                     </div>
-                    <img width="250px" height="230px" src="../assets/img/aproveConnect.png" alt="">
+                    <img width="250px" height="230px" src="~/assets/img/AproveConnect.png" alt="">
                 </div>
             </div>
         </div>
