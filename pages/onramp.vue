@@ -171,7 +171,7 @@
                     <div class="tb-title">
                         Click "Connect Wallet"
                     </div>
-                    <img src="../assets/img/connectWallet.png" alt="">
+                    <img src="~/assets/img/ConnectWallet.png" alt="">
                 </div>
 
                 <div class="tb-item">
