@@ -171,14 +171,14 @@
                     <div class="tb-title">
                         Click "Connect Wallet"
                     </div>
-                    <img src="~/assets/img/ConnectWallet.png" alt="">
+                    <img src="../assets/img/ConnectWallet.png" alt="">
                 </div>
 
                 <div class="tb-item">
                     <div class="tb-title">
                         Approve connection
                     </div>
-                    <img width="250px" height="230px" src="~/assets/img/AproveConnect.png" alt="">
+                    <img width="250px" height="230px" src="../assets/img/AproveConnect.png" alt="">
                 </div>
             </div>
         </div>
